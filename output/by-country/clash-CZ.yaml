@@ -6,30 +6,45 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 162.159.48.32
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.5.173
+  port: 443
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: peekconfigg.vipserver1-39d.workers.dev
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.12.21
+  port: 443
+  uuid: 73796e63-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nahan-core.fatitelegram.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
+- name: 🇨🇿 CZ 03 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 934f2038-17f8-4ec5-9204-8381e19fc6e3
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: tight-bush-0bb4.bshxyyxhdjdggb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +52,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +60,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
+  - 🇨🇿 CZ 03 - xiaohe
 rules:
 - MATCH,PROXIES
