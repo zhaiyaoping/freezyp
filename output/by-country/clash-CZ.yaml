@@ -32,46 +32,6 @@ proxies:
     path: /proxyip=154.3.33.43
     headers:
       Host: mianfei-73q.pages.dev
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 104.21.88.4
-  port: 443
-  uuid: 995d8fdb-36e0-cf6e-e9e8-88ead972fce2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eagle-panel.roya6777.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws/995d8fdb-36e0-cf6e-e9e8-88ead972fce2
-    headers:
-      Host: eagle-panel.roya6777.workers.dev
-- name: 🇨🇿 CZ 04 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇨🇿 CZ 05 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
-  - 🇨🇿 CZ 04 - xiaohe
-  - 🇨🇿 CZ 05 - xiaohe
 rules:
 - MATCH,PROXIES
