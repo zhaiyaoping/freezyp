@@ -9,7 +9,7 @@ proxies:
   server: e2.cover20.ir
   port: 30874
   cipher: chacha20-ietf-poly1305
-  password: 6klqR8ozFYhzL59i8UlHB3pqy74W8tKiZ3fUHrmF0H0=
+  password: O+qLsoqVWBdY2D3lxtd5ksBwkp3QclQ6d+IARlPtFow=
   udp: true
 proxy-groups:
 - name: PROXIES
