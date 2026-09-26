@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -31,6 +18,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: ss
+  server: 195.133.23.200
+  port: 30210
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
