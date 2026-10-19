@@ -6,18 +6,47 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - xiaohe
   type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 5.178.109.174
+      Host: lucasjow.us.ci
 - name: 🇸🇪 SE 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 03 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---mehrosaboran
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 04 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -30,7 +59,21 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 03 - xiaohe
+- name: 🇸🇪 SE 05 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---mehrosaboranfp=chrome
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -43,6 +86,76 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
+- name: 🇸🇪 SE 07 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?V2XAY-joinV
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 08 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 09 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 10 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub?ed=2048
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇸🇪 SE 11 - xiaohe
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +164,14 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
+  - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +180,13 @@ proxy-groups:
   - 🇸🇪 SE 01 - xiaohe
   - 🇸🇪 SE 02 - xiaohe
   - 🇸🇪 SE 03 - xiaohe
+  - 🇸🇪 SE 04 - xiaohe
+  - 🇸🇪 SE 05 - xiaohe
+  - 🇸🇪 SE 06 - xiaohe
+  - 🇸🇪 SE 07 - xiaohe
+  - 🇸🇪 SE 08 - xiaohe
+  - 🇸🇪 SE 09 - xiaohe
+  - 🇸🇪 SE 10 - xiaohe
+  - 🇸🇪 SE 11 - xiaohe
 rules:
 - MATCH,PROXIES
